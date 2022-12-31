@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-content">
+            <h1>Reading List 📚</h1>
+            <div class="button">
+                Add Book 📕
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+    </div>
+    <div class="footer">
+        Made with ☕️ by <a href="https://github.com/pcoch">&nbsp;Pcoch</a>
+    </div>
+    <div class="modal hide">
+        <div class="modal-content">
+            <span class="material-icons-outlined close-btn">
+                highlight_off
+            </span>
+            <form id="form">
+                <div class="form-row">
+                    <input type="text" name="title" id="title" placeholder="Title" required />
+                </div>
+
+                <div class="form-row">
+                    <input type="text" name="author" id="author" placeholder="Author" required />
+                </div>
+
+                <div class="form-row">
+                    <input type="number" name="pages" id="pages" placeholder="Pages" required />
+                </div>
+
+                <div class="form-row-alt">
+                    <h2>Have you read it?</h2>
+                    <input type="checkbox" name="read" id="read" />
+                </div>
+
+                <div class="form-row">
+                    <button type='submit' id='submit'>Add to Library</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
